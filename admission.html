@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student admission application form for RMK CET.">
+  <title>Admission Application | RMK CET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admission-body">
+  <header class="navbar">
+    <a class="brand" href="index.html" aria-label="RMK CET home">
+      <span class="brand-icon">🎓</span>
+      <span class="brand-name">RMK College of Engineering and Technology
+        <small>LEARN · INNOVATE · BUILD TOMORROW</small>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="index.html#courses">Courses</a><a class="active" href="admission.html">Admission</a>
+    </nav>
+    <a href="index.html" class="nav-button">← Back to Home</a>
+  </header>
+
+  <section class="admission-hero">
+    <span class="eyebrow hero-eyebrow">RMK CET · ADMISSIONS 2026</span>
+    <h1>Your Future Begins <span>Here.</span></h1>
+    <p>Take the first step towards your engineering career. Complete the form below.</p>
+    <div class="admission-hero-pills"><span>✓ Student details</span><span>✓ Course selection</span><span>✓ Documents</span></div>
+  </section>
+
+  <main class="admission-page">
+    <aside class="form-intro">
+      <span class="eyebrow">STUDENT APPLICATION</span>
+      <h2>Let's Get to Know You.</h2>
+      <p>Fill in your details carefully. Required fields are marked with an asterisk (*).</p>
+      <div class="admission-benefits">
+        <p><span>01</span> Tell us about yourself</p>
+        <p><span>02</span> Choose your engineering course</p>
+        <p><span>03</span> Select your documents</p>
+      </div>
+      <div class="quote-card">“The future belongs to those who prepare for it today.”<small>Your journey. Your success.</small></div>
+      <a href="index.html#courses" class="back-link">← Explore courses again</a>
+    </aside>
+
+    <section class="form-card">
+      <div class="form-heading">
+        <div><span class="eyebrow">APPLICATION FORM</span><h2>Admission Application</h2><p>Enter your information below.</p></div>
+        <span class="form-number">RMK CET</span>
+      </div>
+
+      <form action="#" method="get">
+        <h3 class="form-section-title"><span>01</span> Personal Information</h3>
+        <div class="form-grid">
+          <div class="field"><label for="name">Full Name *</label><input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required></div>
+          <div class="field"><label for="dob">Date of Birth *</label><input type="date" id="dob" name="dob" required></div>
+          <div class="field"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required></div>
+          <div class="field"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" placeholder="Enter phone number" autocomplete="tel" required></div>
+          <div class="field full"><label for="address">Residential Address *</label><textarea id="address" name="address" rows="3" placeholder="Enter your full address" required></textarea></div>
+        </div>
+
+        <h3 class="form-section-title"><span>02</span> Academic Information</h3>
+        <div class="form-grid">
+          <div class="field"><label for="course">Preferred Department *</label>
+            <select id="course" name="course" required>
+              <option value="">Select a department</option>
+              <option value="CSE">CSE — Computer Science and Engineering</option>
+              <option value="AI">AI — Artificial Intelligence</option>
+              <option value="ECE">ECE — Electronics and Communication Engineering</option>
+            </select>
+          </div>
+          <div class="field"><label for="qualification">Qualification *</label>
+            <select id="qualification" name="qualification" required>
+              <option value="">Select qualification</option><option value="12th">12th Standard / HSC</option><option value="diploma">Diploma</option>
+            </select>
+          </div>
+          <div class="field"><label for="marks">12th Mark Percentage</label><input type="number" id="marks" name="marks" min="0" max="100" step="0.01" placeholder="e.g. 85.5"></div>
+          <div class="field"><label for="school">School / Institution Name</label><input type="text" id="school" name="school" placeholder="Enter institution name"></div>
+        </div>
+
+        <h3 class="form-section-title"><span>03</span> Upload Documents</h3>
+        <p class="upload-help">Choose files from your device. PDF, JPG and PNG are accepted where specified.</p>
+        <div class="upload-grid">
+          <div class="upload-box"><label for="photo"><span class="upload-symbol">📷</span> Student Photograph</label><input type="file" id="photo" name="photo" accept="image/*"></div>
+          <div class="upload-box"><label for="marksheet"><span class="upload-symbol">📄</span> Mark Sheet</label><input type="file" id="marksheet" name="marksheet" accept=".pdf,.jpg,.jpeg,.png"></div>
+          <div class="upload-box full"><label for="documents"><span class="upload-symbol">📎</span> Additional Documents</label><input type="file" id="documents" name="documents" accept=".pdf,.jpg,.jpeg,.png" multiple></div>
+        </div>
+
+        <div class="notice"><strong>Demo notice:</strong> This HTML/CSS prototype does not send or save applications or upload files to a server.</div>
+        <div class="form-actions"><a href="index.html" class="button secondary-dark">← Back to Home</a><button type="submit" class="button primary submit-button">Submit Application <span>→</span></button></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="index.html"><span class="brand-icon">🎓</span><span class="brand-name">RMK College of Engineering and Technology<small>LEARN · INNOVATE · BUILD TOMORROW</small></span></a>
+    <p>Building brighter futures through engineering education.</p>
+    <div class="footer-links"><a href="index.html">Home</a><a href="index.html#courses">Courses</a><a href="admission.html">Admission</a></div>
+    <small>© 2026 RMK College of Engineering and Technology. Frontend demonstration.</small>
+  </footer>
+</body>
+</html>
